@@ -58,7 +58,10 @@ def translate_single_text(json):
 
   response = chat_session.send_message(json['text'])
 
-  print(response.text)
+  # Loại bỏ ký tự \n trong response.text
+  cleaned_response = response.text.replace('\n', '')
+
+  print(cleaned_response)
 
 json_1 = {
  'text': 'Hello',
