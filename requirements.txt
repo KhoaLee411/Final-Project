@@ -1,0 +1,10 @@
+# requirements file
+# pip install -r requirements.txt
+# requirements.txt này định nghĩa các thư viện và phiên bản cụ thể cần thiết cho dự án
+# LlamaIndex (một framework hỗ trợ xử lý thông tin và tìm kiếm) với OpenAI API
+
+python-dotenv==1.0.0 #Thư viện này hỗ trợ làm việc với các tệp .env
+
+llama-index==0.10.27
+llama-index-llms-openai==0.1.15
+llama-index-embeddings-openai==0.1.7
